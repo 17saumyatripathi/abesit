@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body onload="display()">
+    <table border="2" align="center">
+        <form action="" method="post" onsubmit="return validate()"> <!-- Move form here -->
+            <tr> 
+                <td>USERNAME:</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>PASSWORD:</td>
+                <td><input type="password" id="pass"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Login</button></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p id="result"></p></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
