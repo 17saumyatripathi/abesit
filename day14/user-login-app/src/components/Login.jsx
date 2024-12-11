@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = ({regLogin}) => {
   const [email,setEmail]=useState();
   const [password,setPassword]=useState();
+  const navigate=useNavigate();
   const handlelogin=(e)=>{
     e.preventDefault();
     if(email==regLogin.email && password==regLogin.password){
       alert("Login success");
+      navigate("/dashboard");
     }
     else{
       alert("Invalid");
